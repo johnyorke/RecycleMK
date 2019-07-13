@@ -17,6 +17,11 @@
 		DF0BF2E222DA1A3E00CBA56A /* Recyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */; };
 		DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */; };
 		DF0BF2E622DA1BB900CBA56A /* RecyclableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */; };
+		DF3797C122DA8E84005717FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797BF22DA8E84005717FB /* ViewController.swift */; };
+		DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C022DA8E84005717FB /* VisionViewController.swift */; };
+		DF3797C522DA8F57005717FB /* VisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C422DA8F57005717FB /* VisionView.swift */; };
+		DFF2C28122DA78A300C32CC6 /* RecyclableClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFF2C28022DA78A300C32CC6 /* RecyclableClassifier.mlmodel */; };
+		DFF2C28422DA7B2C00C32CC6 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF2C28322DA7B2C00C32CC6 /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recyclable.swift; sourceTree = "<group>"; };
 		DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclableRow.swift; sourceTree = "<group>"; };
+		DF3797BF22DA8E84005717FB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF3797C022DA8E84005717FB /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		DF3797C422DA8F57005717FB /* VisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionView.swift; sourceTree = "<group>"; };
+		DFF2C28022DA78A300C32CC6 /* RecyclableClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecyclableClassifier.mlmodel; sourceTree = "<group>"; };
+		DFF2C28322DA7B2C00C32CC6 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +76,7 @@
 			children = (
 				DF0BF2C822DA1A0E00CBA56A /* AppDelegate.swift */,
 				DF0BF2CA22DA1A0E00CBA56A /* SceneDelegate.swift */,
-				DF0BF2CC22DA1A0E00CBA56A /* RecyclableList.swift */,
+				DFF2C28222DA78A800C32CC6 /* ML */,
 				DF0BF2E822DA1BC200CBA56A /* Views */,
 				DF0BF2E422DA1A4300CBA56A /* Models */,
 				DF0BF2CE22DA1A0F00CBA56A /* Assets.xcassets */,
@@ -95,20 +105,57 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		DF0BF2E722DA1BBE00CBA56A /* Cells */ = {
+		DF0BF2E722DA1BBE00CBA56A /* Rows */ = {
 			isa = PBXGroup;
 			children = (
 				DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */,
 			);
-			path = Cells;
+			path = Rows;
 			sourceTree = "<group>";
 		};
 		DF0BF2E822DA1BC200CBA56A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DF0BF2E722DA1BBE00CBA56A /* Cells */,
+				DFF2C28622DA7CFB00C32CC6 /* Navigation */,
+				DFF2C28522DA7CE300C32CC6 /* Screens */,
+				DF0BF2E722DA1BBE00CBA56A /* Rows */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DF3797C322DA8E89005717FB /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				DF3797C422DA8F57005717FB /* VisionView.swift */,
+				DF3797BF22DA8E84005717FB /* ViewController.swift */,
+				DF3797C022DA8E84005717FB /* VisionViewController.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		DFF2C28222DA78A800C32CC6 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				DFF2C28022DA78A300C32CC6 /* RecyclableClassifier.mlmodel */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		DFF2C28522DA7CE300C32CC6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DF3797C322DA8E89005717FB /* Vision */,
+				DF0BF2CC22DA1A0E00CBA56A /* RecyclableList.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DFF2C28622DA7CFB00C32CC6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DFF2C28322DA7B2C00C32CC6 /* Tabs.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,13 +229,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3797C122DA8E84005717FB /* ViewController.swift in Sources */,
 				DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */,
+				DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */,
 				DF0BF2C922DA1A0E00CBA56A /* AppDelegate.swift in Sources */,
 				DF0BF2E222DA1A3E00CBA56A /* Recyclable.swift in Sources */,
 				DF0BF2E122DA1A3E00CBA56A /* RecyclableType.swift in Sources */,
+				DF3797C522DA8F57005717FB /* VisionView.swift in Sources */,
 				DF0BF2E622DA1BB900CBA56A /* RecyclableRow.swift in Sources */,
+				DFF2C28422DA7B2C00C32CC6 /* Tabs.swift in Sources */,
 				DF0BF2CB22DA1A0E00CBA56A /* SceneDelegate.swift in Sources */,
 				DF0BF2CD22DA1A0E00CBA56A /* RecyclableList.swift in Sources */,
+				DFF2C28122DA78A300C32CC6 /* RecyclableClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
