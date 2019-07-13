@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		DF0BF2C922DA1A0E00CBA56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2C822DA1A0E00CBA56A /* AppDelegate.swift */; };
 		DF0BF2CB22DA1A0E00CBA56A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2CA22DA1A0E00CBA56A /* SceneDelegate.swift */; };
-		DF0BF2CD22DA1A0E00CBA56A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2CC22DA1A0E00CBA56A /* ContentView.swift */; };
+		DF0BF2CD22DA1A0E00CBA56A /* RecyclableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2CC22DA1A0E00CBA56A /* RecyclableList.swift */; };
 		DF0BF2CF22DA1A0F00CBA56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0BF2CE22DA1A0F00CBA56A /* Assets.xcassets */; };
 		DF0BF2D222DA1A0F00CBA56A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0BF2D122DA1A0F00CBA56A /* Preview Assets.xcassets */; };
 		DF0BF2D522DA1A0F00CBA56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0BF2D322DA1A0F00CBA56A /* LaunchScreen.storyboard */; };
+		DF0BF2E122DA1A3E00CBA56A /* RecyclableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DD22DA1A3D00CBA56A /* RecyclableType.swift */; };
+		DF0BF2E222DA1A3E00CBA56A /* Recyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */; };
+		DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */; };
+		DF0BF2E622DA1BB900CBA56A /* RecyclableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF0BF2C522DA1A0E00CBA56A /* RecycleMK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecycleMK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0BF2C822DA1A0E00CBA56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF0BF2CA22DA1A0E00CBA56A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF0BF2CC22DA1A0E00CBA56A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF0BF2CC22DA1A0E00CBA56A /* RecyclableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclableList.swift; sourceTree = "<group>"; };
 		DF0BF2CE22DA1A0F00CBA56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0BF2D122DA1A0F00CBA56A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF0BF2D422DA1A0F00CBA56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0BF2D622DA1A0F00CBA56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF0BF2DD22DA1A3D00CBA56A /* RecyclableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecyclableType.swift; sourceTree = "<group>"; };
+		DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recyclable.swift; sourceTree = "<group>"; };
+		DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclableRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,9 @@
 			children = (
 				DF0BF2C822DA1A0E00CBA56A /* AppDelegate.swift */,
 				DF0BF2CA22DA1A0E00CBA56A /* SceneDelegate.swift */,
-				DF0BF2CC22DA1A0E00CBA56A /* ContentView.swift */,
+				DF0BF2CC22DA1A0E00CBA56A /* RecyclableList.swift */,
+				DF0BF2E822DA1BC200CBA56A /* Views */,
+				DF0BF2E422DA1A4300CBA56A /* Models */,
 				DF0BF2CE22DA1A0F00CBA56A /* Assets.xcassets */,
 				DF0BF2D322DA1A0F00CBA56A /* LaunchScreen.storyboard */,
 				DF0BF2D622DA1A0F00CBA56A /* Info.plist */,
@@ -73,6 +83,32 @@
 				DF0BF2D122DA1A0F00CBA56A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF0BF2E422DA1A4300CBA56A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */,
+				DF0BF2DD22DA1A3D00CBA56A /* RecyclableType.swift */,
+				DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF0BF2E722DA1BBE00CBA56A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DF0BF2E822DA1BC200CBA56A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF0BF2E722DA1BBE00CBA56A /* Cells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */,
 				DF0BF2C922DA1A0E00CBA56A /* AppDelegate.swift in Sources */,
+				DF0BF2E222DA1A3E00CBA56A /* Recyclable.swift in Sources */,
+				DF0BF2E122DA1A3E00CBA56A /* RecyclableType.swift in Sources */,
+				DF0BF2E622DA1BB900CBA56A /* RecyclableRow.swift in Sources */,
 				DF0BF2CB22DA1A0E00CBA56A /* SceneDelegate.swift in Sources */,
-				DF0BF2CD22DA1A0E00CBA56A /* ContentView.swift in Sources */,
+				DF0BF2CD22DA1A0E00CBA56A /* RecyclableList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
