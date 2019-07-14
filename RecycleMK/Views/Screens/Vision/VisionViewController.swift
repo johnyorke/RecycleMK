@@ -8,12 +8,11 @@ Implements the Vision view controller.
 import UIKit
 import AVFoundation
 import Vision
-import SwiftUI
 
 final class VisionViewController: ViewController {
     
     private var detectionOverlay: CALayer! = nil
-    
+    private var detectionLabel: UILabel! = nil
     // Vision parts
     private var analysisRequests = [VNRequest]()
     private let sequenceRequestHandler = VNSequenceRequestHandler()
@@ -29,6 +28,22 @@ final class VisionViewController: ViewController {
     // Queue for dispatching vision classification and barcode requests
     private let visionQueue = DispatchQueue(label: "com.johnyorke.RecycleMK.serialVisionQueue")
     var productViewOpen = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        detectionLabel = UILabel()
+        detectionLabel.textAlignment = .center
+        detectionLabel.numberOfLines = 0
+        detectionLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(detectionLabel)
+        let constraints = [
+            NSLayoutConstraint(item: detectionLabel!, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: detectionLabel!, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: detectionLabel!, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0)
+        ]
+        constraints.forEach { $0.isActive = true }
+        view.addConstraints(constraints)
+    }
     
     /// - Tag: SetupVisionRequest
     @discardableResult
@@ -53,9 +68,13 @@ final class VisionViewController: ViewController {
             let objectClassifier = try VNCoreMLModel(for: MLModel(contentsOf: modelURL))
             let classificationRequest = VNCoreMLRequest(model: objectClassifier, completionHandler: { (request, error) in
                 if let results = request.results as? [VNClassificationObservation] {
-                    if results.first!.confidence > 0.9 {
-                        print("\(results.first!.identifier) : \(results.first!.confidence)")
+                    let dominantObservation = results.first!
+                    var string = ""
+                    if dominantObservation.confidence > 0.9 {
+                        string = "\(dominantObservation.identifier) : \(dominantObservation.confidence)"
+                        print(string)
                     }
+                    DispatchQueue.main.async { self.detectionLabel.text = string }
                 }
             })
             return classificationRequest
