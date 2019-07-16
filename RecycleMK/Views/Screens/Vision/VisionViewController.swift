@@ -70,7 +70,7 @@ final class VisionViewController: ViewController {
                 if let results = request.results as? [VNClassificationObservation] {
                     let dominantObservation = results.first!
                     var string = ""
-                    if dominantObservation.confidence > 0.9 {
+                    if dominantObservation.confidence > 0.99 && dominantObservation.confidence < 1.0 {
                         string = "\(dominantObservation.identifier) : \(dominantObservation.confidence)"
                         print(string)
                     }

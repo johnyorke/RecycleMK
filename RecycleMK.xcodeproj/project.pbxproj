@@ -20,7 +20,7 @@
 		DF3797C122DA8E84005717FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797BF22DA8E84005717FB /* ViewController.swift */; };
 		DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C022DA8E84005717FB /* VisionViewController.swift */; };
 		DF3797C522DA8F57005717FB /* VisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C422DA8F57005717FB /* VisionView.swift */; };
-		DFABF41622DB2FF500E04EDE /* RecyclableClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFABF41522DB2FF500E04EDE /* RecyclableClassifier.mlmodel */; };
+		DFABF41A22DB91F500E04EDE /* RecyclableClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFABF41922DB91F500E04EDE /* RecyclableClassifier.mlmodel */; };
 		DFF2C28422DA7B2C00C32CC6 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF2C28322DA7B2C00C32CC6 /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		DF3797BF22DA8E84005717FB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF3797C022DA8E84005717FB /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		DF3797C422DA8F57005717FB /* VisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionView.swift; sourceTree = "<group>"; };
-		DFABF41522DB2FF500E04EDE /* RecyclableClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecyclableClassifier.mlmodel; sourceTree = "<group>"; };
+		DFABF41922DB91F500E04EDE /* RecyclableClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecyclableClassifier.mlmodel; sourceTree = "<group>"; };
 		DFF2C28322DA7B2C00C32CC6 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 		DFF2C28222DA78A800C32CC6 /* ML */ = {
 			isa = PBXGroup;
 			children = (
-				DFABF41522DB2FF500E04EDE /* RecyclableClassifier.mlmodel */,
+				DFABF41922DB91F500E04EDE /* RecyclableClassifier.mlmodel */,
 			);
 			path = ML;
 			sourceTree = "<group>";
@@ -230,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3797C122DA8E84005717FB /* ViewController.swift in Sources */,
-				DFABF41622DB2FF500E04EDE /* RecyclableClassifier.mlmodel in Sources */,
 				DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */,
 				DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */,
 				DF0BF2C922DA1A0E00CBA56A /* AppDelegate.swift in Sources */,
@@ -241,6 +240,7 @@
 				DFF2C28422DA7B2C00C32CC6 /* Tabs.swift in Sources */,
 				DF0BF2CB22DA1A0E00CBA56A /* SceneDelegate.swift in Sources */,
 				DF0BF2CD22DA1A0E00CBA56A /* RecyclableList.swift in Sources */,
+				DFABF41A22DB91F500E04EDE /* RecyclableClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
