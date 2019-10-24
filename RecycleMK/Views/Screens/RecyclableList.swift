@@ -15,15 +15,16 @@ struct RecyclableList : View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(RecyclableType.allCases.identified(by: \.self)) { type in
-                    Section(header: Text(type.title), footer: self.footerText(for: type)) {
-                        ForEach(Repo.recyclables(for: type)) { recyclable in
+                ForEach(RecyclableType.allCases, id: \.self) { recyclableType in
+                    Section(header: Text(recyclableType.title),
+                            footer: self.footerText(for: recyclableType)) {
+                ForEach(Repo.recyclables(for: recyclableType)) { recyclable in
                             RecyclableRow(recyclable: recyclable)
                         }
                     }
                 }
             }
-            .listStyle(.grouped)
+            .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("Recyclables"), displayMode: .large)
         }
     }

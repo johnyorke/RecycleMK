@@ -12,7 +12,7 @@ struct Tabs : View {
     @State private var currentTab = 0
     
     var body: some View {
-        TabbedView(selection: $currentTab) {
+        TabView(selection: $currentTab) {
             RecyclableList(recyclables: Repo.recyclables)
                 .tabItem {
                     Image(systemName: "list.dash")

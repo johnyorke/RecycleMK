@@ -34,11 +34,12 @@ final class VisionViewController: ViewController {
         detectionLabel = UILabel()
         detectionLabel.textAlignment = .center
         detectionLabel.numberOfLines = 0
+        detectionLabel.textColor = .white
         detectionLabel.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(detectionLabel)
         let constraints = [
             NSLayoutConstraint(item: detectionLabel!, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0),
-            NSLayoutConstraint(item: detectionLabel!, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: detectionLabel!, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.5, constant: 0),
             NSLayoutConstraint(item: detectionLabel!, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0)
         ]
         constraints.forEach { $0.isActive = true }
@@ -71,7 +72,7 @@ final class VisionViewController: ViewController {
                     let dominantObservation = results.first!
                     var string = ""
                     if dominantObservation.confidence > 0.99 && dominantObservation.confidence < 1.0 {
-                        string = "\(dominantObservation.identifier) : \(dominantObservation.confidence)"
+                        string = "\(dominantObservation.identifier) : \(dominantObservation.confidence)\n\n✅"
                         print(string)
                     }
                     DispatchQueue.main.async { self.detectionLabel.text = string }

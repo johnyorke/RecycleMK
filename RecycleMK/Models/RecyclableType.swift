@@ -9,6 +9,7 @@
 import Foundation
 
 enum RecyclableType: Int, CaseIterable, Hashable, Codable {
+
     case paperAndCardboard = 0
     case plasticBottles
     case cansAndTins

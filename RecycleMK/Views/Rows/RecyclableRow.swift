@@ -17,13 +17,19 @@ struct RecyclableRow : View {
             VStack(alignment: .leading) {
                 Text(recyclable.title)
                     .font(.body)
+                    .foregroundColor(.primary)
+                subtitle(from: recyclable)
+                    .font(.footnote)
+                    .lineLimit(Int.max)
                     .foregroundColor(.green)
-                    Text(recyclable.note ?? "")
-                        .font(.footnote)
-                        .lineLimit(Int.max)
-                }
-            Spacer()
             }
+            Spacer()
+        }
+    }
+
+    func subtitle(from recyclable: Recyclable) -> Text? {
+        guard let recyclableNote = recyclable.note, recyclableNote.count > 0 else { return nil }
+        return Text(recyclableNote)
     }
 }
 
