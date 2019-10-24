@@ -22,6 +22,10 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>This app uses the camera to scan items and tell you if they're recyclable or not.</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>IsItRecyclableIntent</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

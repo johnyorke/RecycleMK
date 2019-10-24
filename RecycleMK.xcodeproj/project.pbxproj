@@ -34,6 +34,20 @@
 		DFB5B5B32361DF0F00C8A98F /* Recyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */; };
 		DFB5B5B42361DF0F00C8A98F /* RecyclableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DD22DA1A3D00CBA56A /* RecyclableType.swift */; };
 		DFB5B5B52361DF0F00C8A98F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */; };
+		DFB5B5BE2361E79600C8A98F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B5BD2361E79600C8A98F /* IntentHandler.swift */; };
+		DFB5B5C72361E79600C8A98F /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB5B5C62361E79600C8A98F /* IntentsUI.framework */; };
+		DFB5B5CA2361E79600C8A98F /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B5C92361E79600C8A98F /* IntentViewController.swift */; };
+		DFB5B5CD2361E79600C8A98F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB5B5CB2361E79600C8A98F /* MainInterface.storyboard */; };
+		DFB5B5D12361E79600C8A98F /* IntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFB5B5C42361E79600C8A98F /* IntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFB5B5D42361E79600C8A98F /* Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFB5B5BB2361E79600C8A98F /* Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFB5B5DD2361E7C600C8A98F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B5DC2361E7C600C8A98F /* Intents.intentdefinition */; };
+		DFB5B5E22361ECC400C8A98F /* IsItRecyclableIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B5E12361ECC400C8A98F /* IsItRecyclableIntentHandler.swift */; };
+		DFB5B5E32361ED0A00C8A98F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B5DC2361E7C600C8A98F /* Intents.intentdefinition */; };
+		DFB5B5E52361EE8D00C8A98F /* RecyclableOracle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B5E42361EE8D00C8A98F /* RecyclableOracle.swift */; };
+		DFB5B5E62361EF0E00C8A98F /* RecyclableOracle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B5E42361EE8D00C8A98F /* RecyclableOracle.swift */; };
+		DFB5B5E72361F02900C8A98F /* Recyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */; };
+		DFB5B5E82361F04200C8A98F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */; };
+		DFB5B5E92361F05300C8A98F /* RecyclableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DD22DA1A3D00CBA56A /* RecyclableType.swift */; };
 		DFF2C28422DA7B2C00C32CC6 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF2C28322DA7B2C00C32CC6 /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +65,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = DFB5B5882361DE9800C8A98F;
 			remoteInfo = WatchApp;
+		};
+		DFB5B5CF2361E79600C8A98F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0BF2BD22DA1A0E00CBA56A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB5B5C32361E79600C8A98F;
+			remoteInfo = IntentUI;
+		};
+		DFB5B5D22361E79600C8A98F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0BF2BD22DA1A0E00CBA56A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB5B5BA2361E79600C8A98F;
+			remoteInfo = Intent;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,6 +101,18 @@
 			dstSubfolderSpec = 13;
 			files = (
 				DFB5B5962361DE9B00C8A98F /* WatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB5B5DB2361E79600C8A98F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DFB5B5D42361E79600C8A98F /* Intent.appex in Embed App Extensions */,
+				DFB5B5D12361E79600C8A98F /* IntentUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +147,18 @@
 		DFB5B5A02361DE9B00C8A98F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFB5B5A32361DE9B00C8A98F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DFB5B5A52361DE9B00C8A98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB5B5B62361E74E00C8A98F /* RecycleMK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RecycleMK.entitlements; sourceTree = "<group>"; };
+		DFB5B5BB2361E79600C8A98F /* Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB5B5BD2361E79600C8A98F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		DFB5B5BF2361E79600C8A98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB5B5C42361E79600C8A98F /* IntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB5B5C62361E79600C8A98F /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		DFB5B5C92361E79600C8A98F /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		DFB5B5CC2361E79600C8A98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DFB5B5CE2361E79600C8A98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB5B5DC2361E7C600C8A98F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		DFB5B5E12361ECC400C8A98F /* IsItRecyclableIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsItRecyclableIntentHandler.swift; sourceTree = "<group>"; };
+		DFB5B5E42361EE8D00C8A98F /* RecyclableOracle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclableOracle.swift; sourceTree = "<group>"; };
 		DFF2C28322DA7B2C00C32CC6 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,15 +177,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFB5B5B82361E79600C8A98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB5B5C12361E79600C8A98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB5B5C72361E79600C8A98F /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		DF0BF2BC22DA1A0E00CBA56A = {
 			isa = PBXGroup;
 			children = (
+				DFB5B5DC2361E7C600C8A98F /* Intents.intentdefinition */,
 				DF0BF2C722DA1A0E00CBA56A /* RecycleMK */,
 				DFB5B58A2361DE9800C8A98F /* WatchApp */,
 				DFB5B5992361DE9B00C8A98F /* WatchApp Extension */,
+				DFB5B5BC2361E79600C8A98F /* Intent */,
+				DFB5B5C82361E79600C8A98F /* IntentUI */,
+				DFB5B5C52361E79600C8A98F /* Frameworks */,
 				DF0BF2C622DA1A0E00CBA56A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,6 +215,8 @@
 				DF0BF2C522DA1A0E00CBA56A /* RecycleMK.app */,
 				DFB5B5892361DE9800C8A98F /* WatchApp.app */,
 				DFB5B5952361DE9B00C8A98F /* WatchApp Extension.appex */,
+				DFB5B5BB2361E79600C8A98F /* Intent.appex */,
+				DFB5B5C42361E79600C8A98F /* IntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +224,7 @@
 		DF0BF2C722DA1A0E00CBA56A /* RecycleMK */ = {
 			isa = PBXGroup;
 			children = (
+				DFB5B5B62361E74E00C8A98F /* RecycleMK.entitlements */,
 				DF0BF2C822DA1A0E00CBA56A /* AppDelegate.swift */,
 				DF0BF2CA22DA1A0E00CBA56A /* SceneDelegate.swift */,
 				DFF2C28222DA78A800C32CC6 /* ML */,
@@ -178,6 +252,7 @@
 				DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */,
 				DF0BF2DD22DA1A3D00CBA56A /* RecyclableType.swift */,
 				DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */,
+				DFB5B5E42361EE8D00C8A98F /* RecyclableOracle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +316,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DFB5B5BC2361E79600C8A98F /* Intent */ = {
+			isa = PBXGroup;
+			children = (
+				DFB5B5BD2361E79600C8A98F /* IntentHandler.swift */,
+				DFB5B5E12361ECC400C8A98F /* IsItRecyclableIntentHandler.swift */,
+				DFB5B5BF2361E79600C8A98F /* Info.plist */,
+			);
+			path = Intent;
+			sourceTree = "<group>";
+		};
+		DFB5B5C52361E79600C8A98F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFB5B5C62361E79600C8A98F /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFB5B5C82361E79600C8A98F /* IntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				DFB5B5C92361E79600C8A98F /* IntentViewController.swift */,
+				DFB5B5CB2361E79600C8A98F /* MainInterface.storyboard */,
+				DFB5B5CE2361E79600C8A98F /* Info.plist */,
+			);
+			path = IntentUI;
+			sourceTree = "<group>";
+		};
 		DFF2C28222DA78A800C32CC6 /* ML */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,11 +380,14 @@
 				DF0BF2C222DA1A0E00CBA56A /* Frameworks */,
 				DF0BF2C322DA1A0E00CBA56A /* Resources */,
 				DFB5B5A92361DE9B00C8A98F /* Embed Watch Content */,
+				DFB5B5DB2361E79600C8A98F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				DFB5B5A72361DE9B00C8A98F /* PBXTargetDependency */,
+				DFB5B5D02361E79600C8A98F /* PBXTargetDependency */,
+				DFB5B5D32361E79600C8A98F /* PBXTargetDependency */,
 			);
 			name = RecycleMK;
 			productName = RecycleMK;
@@ -322,6 +428,40 @@
 			productReference = DFB5B5952361DE9B00C8A98F /* WatchApp Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		DFB5B5BA2361E79600C8A98F /* Intent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB5B5D82361E79600C8A98F /* Build configuration list for PBXNativeTarget "Intent" */;
+			buildPhases = (
+				DFB5B5B72361E79600C8A98F /* Sources */,
+				DFB5B5B82361E79600C8A98F /* Frameworks */,
+				DFB5B5B92361E79600C8A98F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intent;
+			productName = Intent;
+			productReference = DFB5B5BB2361E79600C8A98F /* Intent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DFB5B5C32361E79600C8A98F /* IntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB5B5D52361E79600C8A98F /* Build configuration list for PBXNativeTarget "IntentUI" */;
+			buildPhases = (
+				DFB5B5C02361E79600C8A98F /* Sources */,
+				DFB5B5C12361E79600C8A98F /* Frameworks */,
+				DFB5B5C22361E79600C8A98F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentUI;
+			productName = IntentUI;
+			productReference = DFB5B5C42361E79600C8A98F /* IntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,6 +479,12 @@
 						CreatedOnToolsVersion = 11.1;
 					};
 					DFB5B5942361DE9B00C8A98F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					DFB5B5BA2361E79600C8A98F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					DFB5B5C32361E79600C8A98F = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -359,6 +505,8 @@
 				DF0BF2C422DA1A0E00CBA56A /* RecycleMK */,
 				DFB5B5882361DE9800C8A98F /* WatchApp */,
 				DFB5B5942361DE9B00C8A98F /* WatchApp Extension */,
+				DFB5B5BA2361E79600C8A98F /* Intent */,
+				DFB5B5C32361E79600C8A98F /* IntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -392,6 +540,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFB5B5B92361E79600C8A98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB5B5C22361E79600C8A98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB5B5CD2361E79600C8A98F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3797C122DA8E84005717FB /* ViewController.swift in Sources */,
+				DFB5B5E52361EE8D00C8A98F /* RecyclableOracle.swift in Sources */,
 				DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */,
 				DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */,
 				DF0BF2C922DA1A0E00CBA56A /* AppDelegate.swift in Sources */,
@@ -410,6 +574,7 @@
 				DFF2C28422DA7B2C00C32CC6 /* Tabs.swift in Sources */,
 				DF0BF2CB22DA1A0E00CBA56A /* SceneDelegate.swift in Sources */,
 				DF0BF2CD22DA1A0E00CBA56A /* RecyclableList.swift in Sources */,
+				DFB5B5DD2361E7C600C8A98F /* Intents.intentdefinition in Sources */,
 				DFABF41A22DB91F500E04EDE /* RecyclableClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +593,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFB5B5B72361E79600C8A98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB5B5E32361ED0A00C8A98F /* Intents.intentdefinition in Sources */,
+				DFB5B5E62361EF0E00C8A98F /* RecyclableOracle.swift in Sources */,
+				DFB5B5E92361F05300C8A98F /* RecyclableType.swift in Sources */,
+				DFB5B5E22361ECC400C8A98F /* IsItRecyclableIntentHandler.swift in Sources */,
+				DFB5B5E82361F04200C8A98F /* Repo.swift in Sources */,
+				DFB5B5E72361F02900C8A98F /* Recyclable.swift in Sources */,
+				DFB5B5BE2361E79600C8A98F /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB5B5C02361E79600C8A98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB5B5CA2361E79600C8A98F /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -440,6 +627,16 @@
 			isa = PBXTargetDependency;
 			target = DFB5B5882361DE9800C8A98F /* WatchApp */;
 			targetProxy = DFB5B5A62361DE9B00C8A98F /* PBXContainerItemProxy */;
+		};
+		DFB5B5D02361E79600C8A98F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB5B5C32361E79600C8A98F /* IntentUI */;
+			targetProxy = DFB5B5CF2361E79600C8A98F /* PBXContainerItemProxy */;
+		};
+		DFB5B5D32361E79600C8A98F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB5B5BA2361E79600C8A98F /* Intent */;
+			targetProxy = DFB5B5D22361E79600C8A98F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -458,6 +655,14 @@
 				DFB5B58C2361DE9800C8A98F /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		DFB5B5CB2361E79600C8A98F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB5B5CC2361E79600C8A98F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,7 +785,9 @@
 		DF0BF2DA22DA1A0F00CBA56A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RecycleMK/RecycleMK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "RecycleMK/Preview\\ Content";
 				DEVELOPMENT_TEAM = ZKAN55X625;
@@ -600,7 +807,9 @@
 		DF0BF2DB22DA1A0F00CBA56A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RecycleMK/RecycleMK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "RecycleMK/Preview\\ Content";
 				DEVELOPMENT_TEAM = ZKAN55X625;
@@ -703,6 +912,86 @@
 			};
 			name = Release;
 		};
+		DFB5B5D62361E79600C8A98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKAN55X625;
+				INFOPLIST_FILE = IntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnyorke.RecycleMK.IntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFB5B5D72361E79600C8A98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKAN55X625;
+				INFOPLIST_FILE = IntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnyorke.RecycleMK.IntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFB5B5D92361E79600C8A98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKAN55X625;
+				INFOPLIST_FILE = Intent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnyorke.RecycleMK.Intent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFB5B5DA2361E79600C8A98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKAN55X625;
+				INFOPLIST_FILE = Intent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnyorke.RecycleMK.Intent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -738,6 +1027,24 @@
 			buildConfigurations = (
 				DFB5B5AA2361DE9B00C8A98F /* Debug */,
 				DFB5B5AB2361DE9B00C8A98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB5B5D52361E79600C8A98F /* Build configuration list for PBXNativeTarget "IntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB5B5D62361E79600C8A98F /* Debug */,
+				DFB5B5D72361E79600C8A98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB5B5D82361E79600C8A98F /* Build configuration list for PBXNativeTarget "Intent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB5B5D92361E79600C8A98F /* Debug */,
+				DFB5B5DA2361E79600C8A98F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

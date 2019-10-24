@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>INEnums</key>
+	<array/>
+	<key>INIntentDefinitionModelVersion</key>
+	<string>1.1</string>
+	<key>INIntentDefinitionNamespace</key>
+	<string>4aqvFk</string>
+	<key>INIntentDefinitionSystemVersion</key>
+	<string>19A582a</string>
+	<key>INIntentDefinitionToolsBuildVersion</key>
+	<string>11A1027</string>
+	<key>INIntentDefinitionToolsVersion</key>
+	<string>11.1</string>
+	<key>INIntents</key>
+	<array>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>search</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescription</key>
+			<string>Checks if a given item is recyclable</string>
+			<key>INIntentDescriptionID</key>
+			<string>4bNam6</string>
+			<key>INIntentInput</key>
+			<string>item</string>
+			<key>INIntentKeyParameter</key>
+			<string>item</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>1</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key>item</key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Is this recyclable?</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>Y6mXBa</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>IsItRecyclable</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key>item</key>
+				<dict>
+					<key>INIntentParameterCombinationSubtitle</key>
+					<string>Ask Siri if an item is recyclable.</string>
+					<key>INIntentParameterCombinationSubtitleID</key>
+					<string>2HuTyt</string>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Is this recyclable?</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>Xzif6W</string>
+				</dict>
+			</dict>
+			<key>INIntentParameters</key>
+			<array>
+				<dict>
+					<key>INIntentParameterDisplayName</key>
+					<string>Item</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>6Qhoku</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataCapitalization</key>
+						<string>Words</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>item</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>The name of the item you'd like to check.</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>GdOKLv</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
+					<key>INIntentParameterTag</key>
+					<integer>1</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+				</dict>
+			</array>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>${isRecyclable}. ${tip}.</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>w27ytp</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>${isRecyclable}. ${tip}.</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>KzkfVi</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Sorry, this item cannot be found. If in doubt, leave it out (and put it in the black bin bag).</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>J8eN0L</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Sorry, this item cannot be found. If in doubt, leave it out (and put it in the black bin bag).</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>vHymaf</string>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>15</integer>
+				<key>INIntentResponseOutput</key>
+				<string>isRecyclable</string>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Is Recyclable</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>Ywe8Aa</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterMetadata</key>
+						<dict>
+							<key>INIntentResponseParameterMetadataFalseDisplayName</key>
+							<string>No, this item is not recyclable.</string>
+							<key>INIntentResponseParameterMetadataFalseDisplayNameID</key>
+							<string>MIeXpT</string>
+							<key>INIntentResponseParameterMetadataTrueDisplayName</key>
+							<string>Yes, this item is recyclable.</string>
+							<key>INIntentResponseParameterMetadataTrueDisplayNameID</key>
+							<string>OG9LCt</string>
+						</dict>
+						<key>INIntentResponseParameterName</key>
+						<string>isRecyclable</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>14</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>Boolean</string>
+					</dict>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Tip</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>ef2r56</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>tip</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>15</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Is It Recyclable</string>
+			<key>INIntentTitleID</key>
+			<string>SbrG5D</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Search</string>
+		</dict>
+	</array>
+	<key>INTypes</key>
+	<array/>
+</dict>
+</plist>
