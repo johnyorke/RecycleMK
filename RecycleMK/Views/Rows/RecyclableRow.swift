@@ -13,17 +13,19 @@ struct RecyclableRow : View {
     var recyclable: Recyclable
     
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
+        VStack {
+            HStack {
                 Text(recyclable.title)
                     .font(.body)
                     .foregroundColor(.primary)
+                Spacer()
+            }
+            HStack {
                 subtitle(from: recyclable)
                     .font(.footnote)
-                    .lineLimit(Int.max)
                     .foregroundColor(.green)
+                Spacer()
             }
-            Spacer()
         }
     }
 
@@ -40,7 +42,7 @@ struct RecyclableRow_Previews : PreviewProvider {
             RecyclableRow(recyclable: Repo.recyclables[0])
             RecyclableRow(recyclable: Repo.recyclables[6])
             }
-            .previewLayout(.fixed(width: 300, height: 70))
+            .previewLayout(.fixed(width: 200, height: 70))
     }
     
 }
