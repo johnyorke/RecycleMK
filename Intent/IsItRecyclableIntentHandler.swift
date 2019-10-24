@@ -19,11 +19,11 @@ class IsItRecyclableIntentHandler: NSObject, IsItRecyclableIntentHandling {
         let oracle = RecyclableOracle()
         if
             let searchString = intent.item,
-            let recyclable = oracle.isItemRecyclable(searchString)
+            let _ = oracle.isItemRecyclable(searchString)
             {
-                completion(.success(isRecyclable: 1, tip: recyclable.type.note ?? ""))
+                completion(.success(isRecyclable: 1))
         } else {
-            completion(.success(isRecyclable: 0, tip: ""))
+            completion(.success(isRecyclable: 0))
         }
     }
 
