@@ -52,13 +52,13 @@
 				<key>item</key>
 				<dict>
 					<key>INIntentParameterCombinationSubtitle</key>
-					<string>Check if an item can be recycled in Milton Keynes.</string>
+					<string>Ask Siri if an item is recyclable.</string>
 					<key>INIntentParameterCombinationSubtitleID</key>
 					<string>2HuTyt</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Check Recycling</string>
+					<string>Can I recycle ${item}?</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>Xzif6W</string>
 				</dict>

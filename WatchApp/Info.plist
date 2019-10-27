@@ -29,5 +29,7 @@
 	<string>com.johnyorke.RecycleMK</string>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>NSSiriUsageDescription</key>
+	<string>This app allows you to ask Siri if certain items are recyclable.</string>
 </dict>
 </plist>

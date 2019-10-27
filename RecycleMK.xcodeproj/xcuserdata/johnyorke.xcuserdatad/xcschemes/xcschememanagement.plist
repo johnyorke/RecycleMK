@@ -7,7 +7,7 @@
 		<key>Intent.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 		<key>IntentUI.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,12 +17,35 @@
 		<key>RecycleMK.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>WatchApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DF0BF2C422DA1A0E00CBA56A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFB5B5882361DE9800C8A98F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFB5B5BA2361E79600C8A98F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFB5B5C32361E79600C8A98F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

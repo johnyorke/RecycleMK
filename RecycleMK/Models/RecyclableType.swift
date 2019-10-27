@@ -31,11 +31,11 @@ enum RecyclableType: Int, CaseIterable, Hashable, Codable {
     var note: String? {
         switch self {
         case .plasticBottles:
-            return "Wash, squash and put the lid back on"
+            return "Just wash, squash and put the lid back on."
         case .cansAndTins:
-            return "Just rinse it out"
+            return "Just rinse it out."
         case .foodAndDrinkCartons:
-            return "Sometimes called \"Tetrapak\""
+            return "These can sometimes called be \"Tetrapak\"."
         default:
             return nil
         }

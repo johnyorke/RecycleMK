@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF08804823662465008635C7 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DF7E27252362023B00028E87 /* Intents.intentdefinition */; };
 		DF0BF2C922DA1A0E00CBA56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2C822DA1A0E00CBA56A /* AppDelegate.swift */; };
 		DF0BF2CB22DA1A0E00CBA56A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2CA22DA1A0E00CBA56A /* SceneDelegate.swift */; };
 		DF0BF2CD22DA1A0E00CBA56A /* RecyclableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2CC22DA1A0E00CBA56A /* RecyclableList.swift */; };
@@ -21,7 +22,6 @@
 		DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C022DA8E84005717FB /* VisionViewController.swift */; };
 		DF3797C522DA8F57005717FB /* VisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C422DA8F57005717FB /* VisionView.swift */; };
 		DF7E27222362023B00028E87 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DF7E27252362023B00028E87 /* Intents.intentdefinition */; };
-		DF7E27232362023B00028E87 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DF7E27252362023B00028E87 /* Intents.intentdefinition */; };
 		DFABF41A22DB91F500E04EDE /* RecyclableClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFABF41922DB91F500E04EDE /* RecyclableClassifier.mlmodel */; };
 		DFB5B58D2361DE9800C8A98F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB5B58B2361DE9800C8A98F /* Interface.storyboard */; };
 		DFB5B58F2361DE9A00C8A98F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB5B58E2361DE9A00C8A98F /* Assets.xcassets */; };
@@ -136,7 +136,6 @@
 		DF3797C022DA8E84005717FB /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		DF3797C422DA8F57005717FB /* VisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionView.swift; sourceTree = "<group>"; };
 		DF7E27242362023B00028E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
-		DF7E2727236222E900028E87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		DFABF41922DB91F500E04EDE /* RecyclableClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecyclableClassifier.mlmodel; sourceTree = "<group>"; };
 		DFB5B5892361DE9800C8A98F /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB5B58C2361DE9800C8A98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -598,7 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7E27232362023B00028E87 /* Intents.intentdefinition in Sources */,
+				DF08804823662465008635C7 /* Intents.intentdefinition in Sources */,
 				DFB5B5E62361EF0E00C8A98F /* RecyclableOracle.swift in Sources */,
 				DFB5B5E92361F05300C8A98F /* RecyclableType.swift in Sources */,
 				DFB5B5E22361ECC400C8A98F /* IsItRecyclableIntentHandler.swift in Sources */,
@@ -654,7 +653,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				DF7E27242362023B00028E87 /* Base */,
-				DF7E2727236222E900028E87 /* en */,
 			);
 			name = Intents.intentdefinition;
 			sourceTree = "<group>";
