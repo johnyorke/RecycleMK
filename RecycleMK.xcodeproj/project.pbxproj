@@ -18,6 +18,7 @@
 		DF0BF2E222DA1A3E00CBA56A /* Recyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */; };
 		DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */; };
 		DF0BF2E622DA1BB900CBA56A /* RecyclableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */; };
+		DF266B4E23677BAF00C84E8A /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF266B4D23677BAF00C84E8A /* SettingsList.swift */; };
 		DF3797C122DA8E84005717FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797BF22DA8E84005717FB /* ViewController.swift */; };
 		DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C022DA8E84005717FB /* VisionViewController.swift */; };
 		DF3797C522DA8F57005717FB /* VisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3797C422DA8F57005717FB /* VisionView.swift */; };
@@ -132,6 +133,7 @@
 		DF0BF2DE22DA1A3D00CBA56A /* Recyclable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recyclable.swift; sourceTree = "<group>"; };
 		DF0BF2DF22DA1A3E00CBA56A /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		DF0BF2E522DA1BB900CBA56A /* RecyclableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclableRow.swift; sourceTree = "<group>"; };
+		DF266B4D23677BAF00C84E8A /* SettingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
 		DF3797BF22DA8E84005717FB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF3797C022DA8E84005717FB /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		DF3797C422DA8F57005717FB /* VisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionView.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 			children = (
 				DF3797C322DA8E89005717FB /* Vision */,
 				DF0BF2CC22DA1A0E00CBA56A /* RecyclableList.swift */,
+				DF266B4D23677BAF00C84E8A /* SettingsList.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 			files = (
 				DF3797C122DA8E84005717FB /* ViewController.swift in Sources */,
 				DFB5B5E52361EE8D00C8A98F /* RecyclableOracle.swift in Sources */,
+				DF266B4E23677BAF00C84E8A /* SettingsList.swift in Sources */,
 				DF0BF2E322DA1A3E00CBA56A /* Repo.swift in Sources */,
 				DF3797C222DA8E84005717FB /* VisionViewController.swift in Sources */,
 				DF0BF2C922DA1A0E00CBA56A /* AppDelegate.swift in Sources */,

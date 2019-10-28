@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Intents
 
 struct RecyclableList : View {
     
@@ -18,14 +19,17 @@ struct RecyclableList : View {
                 ForEach(RecyclableType.allCases, id: \.self) { recyclableType in
                     Section(header: Text(recyclableType.title),
                             footer: self.footerText(for: recyclableType)) {
-                ForEach(Repo.recyclables(for: recyclableType)) { recyclable in
-                            RecyclableRow(recyclable: recyclable)
-                        }
+                                ForEach(Repo.recyclables(for: recyclableType)) { recyclable in
+                                    RecyclableRow(recyclable: recyclable)
+                                }
                     }
                 }
             }
             .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("Recyclables"), displayMode: .large)
+            .onAppear {
+                self.donateInteraction()
+            }
         }
     }
     
@@ -33,6 +37,13 @@ struct RecyclableList : View {
         guard let note = type.note else { return nil }
         let string = "Tip: \(note)"
         return Text(string)
+    }
+
+    func donateInteraction() {
+        let intent = IsItRecyclableIntent()
+        intent.suggestedInvocationPhrase = "Check recycling"
+        let interaction = INInteraction(intent: intent, response: nil)
+        interaction.donate(completion: nil)
     }
     
 }

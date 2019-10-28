@@ -46,16 +46,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupAVCapture()
-        INPreferences.requestSiriAuthorization { (authStatus: INSiriAuthorizationStatus) in
-            self.donateInteraction()
-        }
-    }
-
-    func donateInteraction() {
-        let intent = IsItRecyclableIntent()
-        intent.suggestedInvocationPhrase = "Is item recyclable?"
-        let interaction = INInteraction(intent: intent, response: nil)
-        interaction.donate(completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

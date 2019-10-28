@@ -15,15 +15,21 @@ struct Tabs : View {
         TabView(selection: $currentTab) {
             RecyclableList(recyclables: Repo.recyclables)
                 .tabItem {
-                    Image(systemName: "list.dash")
-                    Text("List")
+                    Image(systemName: "arrow.2.circlepath")
+                    Text("Recyclables")
             }.tag(0)
-            
-            VisionView()
+
+            SettingsList()
                 .tabItem {
-                    Image(systemName: "eye")
-                    Text("Live")
+                    Image(systemName: "ellipsis")
+                    Text("More")
             }.tag(1)
+            
+//            VisionView()
+//                .tabItem {
+//                    Image(systemName: "eye")
+//                    Text("Live")
+//            }.tag(1)
         }
 
         .accentColor(.green)
