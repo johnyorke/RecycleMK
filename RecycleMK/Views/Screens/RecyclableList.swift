@@ -31,6 +31,7 @@ struct RecyclableList : View {
                 self.donateInteraction()
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     func footerText(for type: RecyclableType) -> Text? {

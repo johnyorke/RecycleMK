@@ -89,6 +89,7 @@ struct SettingsList : View {
             .navigationBarTitle(Text("More"), displayMode: .large)
             .padding([.leading, .trailing], -12)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
