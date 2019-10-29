@@ -40,4 +40,17 @@ enum RecyclableType: Int, CaseIterable, Hashable, Codable {
             return nil
         }
     }
+
+    var emoji: String {
+        switch self {
+        case .paperAndCardboard:
+            return "📦"
+        case .plasticBottles:
+            return "🧴"
+        case .cansAndTins:
+            return "🥫"
+        case .foodAndDrinkCartons:
+            return "🥡"
+        }
+    }
 }

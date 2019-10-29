@@ -17,7 +17,7 @@ struct RecyclableList : View {
         NavigationView {
             List {
                 ForEach(RecyclableType.allCases, id: \.self) { recyclableType in
-                    Section(header: Text(recyclableType.title),
+                    Section(header: Text("\(recyclableType.emoji) \(recyclableType.title)"),
                             footer: self.footerText(for: recyclableType)) {
                                 ForEach(Repo.recyclables(for: recyclableType)) { recyclable in
                                     RecyclableRow(recyclable: recyclable)
