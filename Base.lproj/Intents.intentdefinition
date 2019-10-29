@@ -9,7 +9,7 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>4aqvFk</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>19A582a</string>
+	<string>19A603</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
 	<string>11A1027</string>
 	<key>INIntentDefinitionToolsVersion</key>
@@ -22,7 +22,7 @@
 			<key>INIntentConfigurable</key>
 			<true/>
 			<key>INIntentDescription</key>
-			<string>Checks if a given item is recyclable.</string>
+			<string>Checks if a given item is recyclable in Milton Keynes</string>
 			<key>INIntentDescriptionID</key>
 			<string>4bNam6</string>
 			<key>INIntentInput</key>
@@ -58,7 +58,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Check Recycling</string>
+					<string>Check if item is recyclable</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>Xzif6W</string>
 				</dict>
@@ -188,7 +188,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Check Recycling</string>
+			<string>Check if item is recyclable</string>
 			<key>INIntentTitleID</key>
 			<string>SbrG5D</string>
 			<key>INIntentType</key>

@@ -20,18 +20,27 @@ struct RecyclableRow : View {
                     .foregroundColor(.primary)
                 Spacer()
             }
-            HStack {
-                subtitle(from: recyclable)
-                    .font(.footnote)
-                    .foregroundColor(.green)
-                Spacer()
-            }
+            subtitleView(from: recyclable)
         }
     }
 
-    func subtitle(from recyclable: Recyclable) -> Text? {
+    func subtitleView(from recyclable: Recyclable) -> RecyclableRowSubtitleView? {
         guard let recyclableNote = recyclable.note, recyclableNote.count > 0 else { return nil }
-        return Text(recyclableNote)
+        return RecyclableRowSubtitleView(subtitle: recyclableNote)
+    }
+}
+
+struct RecyclableRowSubtitleView: View {
+
+    var subtitle: String
+
+    var body: some View {
+        HStack {
+            Text(verbatim: subtitle)
+                .font(.footnote)
+                .foregroundColor(.green)
+            Spacer()
+        }
     }
 }
 
